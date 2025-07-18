@@ -97,7 +97,7 @@
             this.errorMsg.TabIndex = 5;
             this.errorMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Basic_1_option
+            // Basic_3_option
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,8 +108,8 @@
             this.Controls.Add(this.askAmount);
             this.Controls.Add(this.Start_button);
             this.Controls.Add(this.Back_button);
-            this.Name = "Basic_1_option";
-            this.Text = "Basic_1_option";
+            this.Name = "Basic_3_option";
+            this.Text = "Basic_3_option";
             this.ResumeLayout(false);
             this.PerformLayout();
 

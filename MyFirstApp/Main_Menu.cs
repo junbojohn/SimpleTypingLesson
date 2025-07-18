@@ -62,6 +62,7 @@ namespace MyFirstApp
             Application.Exit();
         }
 
+        // Key testing button
         private void testing_form_Click(object sender, EventArgs e)
         {
             var test = new Testing_form();
@@ -70,6 +71,7 @@ namespace MyFirstApp
             this.Hide();
         }
 
+        // Button for 'Basic 2' lesson
         private void B2_btn_Click(object sender, EventArgs e)
         {
             //var b2 = new Basic_2();
@@ -81,6 +83,7 @@ namespace MyFirstApp
             this.Hide();
         }
 
+        // Button for 'Basic 3' lesson
         private void B3_btn_Click(object sender, EventArgs e)
         {
             var b3 = new Basic_3_option();
@@ -89,10 +92,29 @@ namespace MyFirstApp
             this.Hide();
         }
 
+        // Button for 'Number keys' lesson
         private void Num_btn_Click(object sender, EventArgs e)
         {
             var num = new Num_keys_option();
             num.Show();
+
+            this.Hide();
+        }
+
+        // Button for 'Uppercase 1' lesson
+        private void UC1_btn_Click(object sender, EventArgs e)
+        {
+            var uc1 = new Uppercase_1_option();
+            uc1.Show();
+
+            this.Hide();
+        }
+
+        // Button for 'Uppercase 2' lesson
+        private void UC2_btn_Click(object sender, EventArgs e)
+        {
+            var uc1 = new Uppercase_2_option();
+            uc1.Show();
 
             this.Hide();
         }

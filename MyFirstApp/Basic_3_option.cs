@@ -27,7 +27,7 @@ namespace MyFirstApp
             this.Hide();
         }
 
-        // Button that starts Basic_1 lesson with setting given
+        // Button that starts 'Basic_3' lesson with setting given
         private void Start_Button_Click(object sender, EventArgs e)
         {
             // check if the given setting input('typeAmount' variable) is valid to start lesson with
@@ -35,7 +35,8 @@ namespace MyFirstApp
 
             // if the given setting input('typeAmount') is invalid(either it's empty, not integer,
             // less than 50, or more than 200, print error message.
-            if (Int32.Parse(typeAmount.Text).GetType() != typeof(int) || typeAmount.Text == null || Int32.Parse(typeAmount.Text) < 50 || Int32.Parse(typeAmount.Text) > 200)
+            //https://stackoverflow.com/questions/894263/identify-if-a-string-is-a-number
+            if (!int.TryParse(typeAmount.Text, out int result) || typeAmount.Text == null || Int32.Parse(typeAmount.Text) < 50 || Int32.Parse(typeAmount.Text) > 200)
             {
                 errorMsg.Text = "Please input a valid amount";
             }

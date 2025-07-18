@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Uppercase_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uppercase_2.Designer.cs">
+      <DependentUpon>Uppercase_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uppercase_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uppercase_1.Designer.cs">
+      <DependentUpon>Uppercase_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Num_keys.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +69,18 @@
     </Compile>
     <Compile Include="Basic_3.Designer.cs">
       <DependentUpon>Basic_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uppercase_2_option.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uppercase_2_option.Designer.cs">
+      <DependentUpon>Uppercase_2_option.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uppercase_1_option.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uppercase_1_option.Designer.cs">
+      <DependentUpon>Uppercase_1_option.cs</DependentUpon>
     </Compile>
     <Compile Include="Num_keys_option.cs">
       <SubType>Form</SubType>
@@ -117,11 +141,23 @@
     <EmbeddedResource Include="Basic_1.resx">
       <DependentUpon>Basic_1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Uppercase_2.resx">
+      <DependentUpon>Uppercase_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uppercase_1.resx">
+      <DependentUpon>Uppercase_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Num_keys.resx">
       <DependentUpon>Num_keys.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Basic_3.resx">
       <DependentUpon>Basic_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uppercase_2_option.resx">
+      <DependentUpon>Uppercase_2_option.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uppercase_1_option.resx">
+      <DependentUpon>Uppercase_1_option.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Num_keys_option.resx">
       <DependentUpon>Num_keys_option.cs</DependentUpon>

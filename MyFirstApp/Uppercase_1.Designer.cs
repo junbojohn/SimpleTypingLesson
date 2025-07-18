@@ -1,7 +1,7 @@
 ﻿
 namespace MyFirstApp
 {
-    partial class Num_keys
+    partial class Uppercase_1
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace MyFirstApp
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Num_keys_objective = new System.Windows.Forms.Label();
+            this.Uppercase_1_objective = new System.Windows.Forms.Label();
             this.current_target = new System.Windows.Forms.Label();
             this.next_1 = new System.Windows.Forms.Label();
             this.next_2 = new System.Windows.Forms.Label();
@@ -44,18 +44,18 @@ namespace MyFirstApp
             this.Update_Stopwatch = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // Num_keys_objective
+            // Uppercase_1_objective
             // 
-            this.Num_keys_objective.AutoSize = true;
-            this.Num_keys_objective.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Num_keys_objective.Location = new System.Drawing.Point(238, 21);
-            this.Num_keys_objective.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Num_keys_objective.Name = "Num_keys_objective";
-            this.Num_keys_objective.Size = new System.Drawing.Size(418, 50);
-            this.Num_keys_objective.TabIndex = 0;
-            this.Num_keys_objective.Text = "Current Lesson: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9\r\n*BOTH UPPER AND RIGHT LAYER WORKS*\r" +
-    "\n";
-            this.Num_keys_objective.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Uppercase_1_objective.AutoSize = true;
+            this.Uppercase_1_objective.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Uppercase_1_objective.Location = new System.Drawing.Point(238, 21);
+            this.Uppercase_1_objective.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Uppercase_1_objective.Name = "Uppercase_1_objective";
+            this.Uppercase_1_objective.Size = new System.Drawing.Size(473, 50);
+            this.Uppercase_1_objective.TabIndex = 0;
+            this.Uppercase_1_objective.Text = "Current Lesson: asdf(Left) and jkl;(Right).\r\n*BOTH UPPER AND LOWERCASE WILL APPEA" +
+    "R*";
+            this.Uppercase_1_objective.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // current_target
             // 
@@ -185,7 +185,7 @@ namespace MyFirstApp
             this.Update_Stopwatch.Interval = 10;
             this.Update_Stopwatch.Tick += new System.EventHandler(this.Update_Stopwatch_Tick);
             // 
-            // Num_keys
+            // Uppercase_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,10 +200,11 @@ namespace MyFirstApp
             this.Controls.Add(this.next_2);
             this.Controls.Add(this.next_1);
             this.Controls.Add(this.current_target);
-            this.Controls.Add(this.Num_keys_objective);
+            this.Controls.Add(this.Uppercase_1_objective);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "Num_keys";
-            this.Text = "Num_keys";
+            this.Name = "Uppercase_1";
+            this.RightToLeftLayout = true;
+            this.Text = "Uppercase_1";
             this.Load += new System.EventHandler(this.Num_keys_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Num_keys_KeyPress);
             this.ResumeLayout(false);
@@ -213,7 +214,7 @@ namespace MyFirstApp
 
         #endregion
 
-        private System.Windows.Forms.Label Num_keys_objective;
+        private System.Windows.Forms.Label Uppercase_1_objective;
         private System.Windows.Forms.Label current_target;
         private System.Windows.Forms.Label next_1;
         private System.Windows.Forms.Label next_2;

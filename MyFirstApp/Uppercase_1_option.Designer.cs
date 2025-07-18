@@ -1,6 +1,6 @@
 ﻿namespace MyFirstApp
 {
-    partial class Num_keys_option
+    partial class Uppercase_1_option
     {
         /// <summary>
         /// Required designer variable.

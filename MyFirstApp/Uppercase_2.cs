@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace MyFirstApp
 {
-    public partial class Num_keys : Form
+    public partial class Uppercase_2 : Form
     {
         private char[] keySets;
         private char[] targetInputs;
@@ -26,7 +26,7 @@ namespace MyFirstApp
         private bool finished;
         private Stopwatch tracker;
 
-        public Num_keys(int inputAmount)
+        public Uppercase_2(int inputAmount)
         {
             InitializeComponent();
 
@@ -35,7 +35,7 @@ namespace MyFirstApp
 
         private void Num_keys_Load(object sender, EventArgs e)
         {
-            keySets = new char[10];
+            keySets = new char[16];
             targetInputs = new char[inputAmount];
             rng = new Random();
 
@@ -45,20 +45,27 @@ namespace MyFirstApp
             finished = false;
             tracker = new Stopwatch();
 
-            keySets[0] = '0';
-            keySets[1] = '1';
-            keySets[2] = '2';
-            keySets[3] = '3';
-            keySets[4] = '4';
-            keySets[5] = '5';
-            keySets[6] = '6';
-            keySets[7] = '7';
-            keySets[8] = '8';
-            keySets[9] = '9';
+            keySets[0] = 'q';
+            keySets[1] = 'w';
+            keySets[2] = 'e';
+            keySets[3] = 'r';
+            keySets[4] = 'u';
+            keySets[5] = 'i';
+            keySets[6] = 'o';
+            keySets[7] = 'p';
+
+            keySets[8] = 'Q';
+            keySets[9] = 'W';
+            keySets[10] = 'E';
+            keySets[11] = 'R';
+            keySets[12] = 'U';
+            keySets[13] = 'I';
+            keySets[14] = 'O';
+            keySets[15] = 'P';
 
             for (int i = 0; i < targetInputs.Count(); i++)
             {
-                rand = rng.Next(10);
+                rand = rng.Next(16);
 
                 targetInputs[i] = keySets[rand];
             }

@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace MyFirstApp
 {
-    public partial class Basic_1_option : Form
+    public partial class Uppercase_2_option : Form
     {
-        public Basic_1_option()
+        public Uppercase_2_option()
         {
             InitializeComponent();
         }
 
+        
         // Button that takes user back to main menu screen
         private void Back_Button_Click(object sender, EventArgs e)
         {
@@ -26,7 +27,7 @@ namespace MyFirstApp
             this.Hide();
         }
 
-        // Button that starts Basic_1 lesson with setting given
+        // Button that starts 'Uppercase_2' lesson with setting given
         private void Start_Button_Click(object sender, EventArgs e)
         {
             // check if the given setting input('typeAmount' variable) is valid to start lesson with
@@ -42,11 +43,12 @@ namespace MyFirstApp
 
             else if (Int32.Parse(typeAmount.Text) >= 50 && Int32.Parse(typeAmount.Text) <= 200)
             {
-                var b1 = new Basic_1(Int32.Parse(typeAmount.Text));
-                b1.Show();
+                var uc2 = new Uppercase_2(Int32.Parse(typeAmount.Text));
+                uc2.Show();
 
                 this.Hide();
             }
         }
+        
     }
 }
