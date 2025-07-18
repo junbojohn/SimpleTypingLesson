@@ -33,7 +33,7 @@ namespace MyFirstApp
             this.inputAmount = inputAmount;
         }
 
-        private void Num_keys_Load(object sender, EventArgs e)
+        private void Uppercase_1_Load(object sender, EventArgs e)
         {
             keySets = new char[16];
             targetInputs = new char[inputAmount];
@@ -81,7 +81,7 @@ namespace MyFirstApp
             Error_Count.Text = errors.ToString();
         }
 
-        private void Num_keys_KeyPress(object sender, KeyPressEventArgs e)
+        private void Uppercase_1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (current_index < targetInputs.Count())
             {

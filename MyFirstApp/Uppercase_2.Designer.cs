@@ -205,8 +205,8 @@ namespace MyFirstApp
             this.Name = "Uppercase_2";
             this.RightToLeftLayout = true;
             this.Text = "Uppercase_2";
-            this.Load += new System.EventHandler(this.Num_keys_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Num_keys_KeyPress);
+            this.Load += new System.EventHandler(this.Uppercase_2_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Uppercase_2_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
