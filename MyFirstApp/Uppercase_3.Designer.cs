@@ -1,7 +1,7 @@
 ﻿
 namespace MyFirstApp
 {
-    partial class Uppercase_2
+    partial class Uppercase_3
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace MyFirstApp
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Uppercase_2_objective = new System.Windows.Forms.Label();
+            this.Uppercase_3_objective = new System.Windows.Forms.Label();
             this.current_target = new System.Windows.Forms.Label();
             this.next_1 = new System.Windows.Forms.Label();
             this.next_2 = new System.Windows.Forms.Label();
@@ -44,18 +44,18 @@ namespace MyFirstApp
             this.Update_Stopwatch = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // Uppercase_2_objective
+            // Uppercase_3_objective
             // 
-            this.Uppercase_2_objective.AutoSize = true;
-            this.Uppercase_2_objective.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Uppercase_2_objective.Location = new System.Drawing.Point(238, 21);
-            this.Uppercase_2_objective.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Uppercase_2_objective.Name = "Uppercase_2_objective";
-            this.Uppercase_2_objective.Size = new System.Drawing.Size(473, 50);
-            this.Uppercase_2_objective.TabIndex = 0;
-            this.Uppercase_2_objective.Text = "Current Lesson: qwer(Left) and uiop(Right).\r\n*BOTH UPPER AND LOWERCASE WILL APPEA" +
+            this.Uppercase_3_objective.AutoSize = true;
+            this.Uppercase_3_objective.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Uppercase_3_objective.Location = new System.Drawing.Point(238, 21);
+            this.Uppercase_3_objective.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Uppercase_3_objective.Name = "Uppercase_3_objective";
+            this.Uppercase_3_objective.Size = new System.Drawing.Size(473, 50);
+            this.Uppercase_3_objective.TabIndex = 0;
+            this.Uppercase_3_objective.Text = "Current Lesson: zxcv(Left) and nm,.(Right).\r\n*BOTH UPPER AND LOWERCASE WILL APPEA" +
     "R*";
-            this.Uppercase_2_objective.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Uppercase_3_objective.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // current_target
             // 
@@ -185,7 +185,7 @@ namespace MyFirstApp
             this.Update_Stopwatch.Interval = 10;
             this.Update_Stopwatch.Tick += new System.EventHandler(this.Update_Stopwatch_Tick);
             // 
-            // Uppercase_2
+            // Uppercase_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,13 +200,13 @@ namespace MyFirstApp
             this.Controls.Add(this.next_2);
             this.Controls.Add(this.next_1);
             this.Controls.Add(this.current_target);
-            this.Controls.Add(this.Uppercase_2_objective);
+            this.Controls.Add(this.Uppercase_3_objective);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "Uppercase_2";
+            this.Name = "Uppercase_3";
             this.RightToLeftLayout = true;
-            this.Text = "Uppercase_2";
-            this.Load += new System.EventHandler(this.Uppercase_2_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Uppercase_2_KeyPress);
+            this.Text = "Uppercase_3";
+            this.Load += new System.EventHandler(this.Uppercase_3_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Uppercase_3_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,7 +214,7 @@ namespace MyFirstApp
 
         #endregion
 
-        private System.Windows.Forms.Label Uppercase_2_objective;
+        private System.Windows.Forms.Label Uppercase_3_objective;
         private System.Windows.Forms.Label current_target;
         private System.Windows.Forms.Label next_1;
         private System.Windows.Forms.Label next_2;

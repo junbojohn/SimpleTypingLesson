@@ -47,8 +47,10 @@ namespace MyFirstApp
             this.UC2_desc = new System.Windows.Forms.Label();
             this.UC3_btn = new System.Windows.Forms.Button();
             this.UC3_desc = new System.Windows.Forms.Label();
-            this.ALL_btn = new System.Windows.Forms.Button();
+            this.All_btn = new System.Windows.Forms.Button();
             this.ALL_desc = new System.Windows.Forms.Label();
+            this.version_display = new System.Windows.Forms.Label();
+            this.creator_display = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Menu_Title
@@ -207,9 +209,9 @@ namespace MyFirstApp
             this.UC1_desc.Location = new System.Drawing.Point(225, 260);
             this.UC1_desc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UC1_desc.Name = "UC1_desc";
-            this.UC1_desc.Size = new System.Drawing.Size(412, 20);
+            this.UC1_desc.Size = new System.Drawing.Size(483, 20);
             this.UC1_desc.TabIndex = 14;
-            this.UC1_desc.Text = "Practice typing basic homerows with upper case mixed up";
+            this.UC1_desc.Text = "Practice typing basic homerows (asdf, jkl;) with upper case mixed up";
             // 
             // UC2_btn
             // 
@@ -244,6 +246,7 @@ namespace MyFirstApp
             this.UC3_btn.TabIndex = 17;
             this.UC3_btn.Text = "Uppercase 3";
             this.UC3_btn.UseVisualStyleBackColor = true;
+            this.UC3_btn.Click += new System.EventHandler(this.UC3_btn_Click);
             // 
             // UC3_desc
             // 
@@ -256,16 +259,17 @@ namespace MyFirstApp
             this.UC3_desc.TabIndex = 18;
             this.UC3_desc.Text = "Practice typing different rows (zxcv, nm,.) with upper case mixed up";
             // 
-            // ALL_btn
+            // All_btn
             // 
-            this.ALL_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ALL_btn.Location = new System.Drawing.Point(89, 400);
-            this.ALL_btn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ALL_btn.Name = "ALL_btn";
-            this.ALL_btn.Size = new System.Drawing.Size(110, 28);
-            this.ALL_btn.TabIndex = 19;
-            this.ALL_btn.Text = "All keys";
-            this.ALL_btn.UseVisualStyleBackColor = true;
+            this.All_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.All_btn.Location = new System.Drawing.Point(89, 400);
+            this.All_btn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.All_btn.Name = "All_btn";
+            this.All_btn.Size = new System.Drawing.Size(110, 28);
+            this.All_btn.TabIndex = 19;
+            this.All_btn.Text = "All keys";
+            this.All_btn.UseVisualStyleBackColor = true;
+            this.All_btn.Click += new System.EventHandler(this.All_btn_Click);
             // 
             // ALL_desc
             // 
@@ -278,13 +282,35 @@ namespace MyFirstApp
             this.ALL_desc.TabIndex = 20;
             this.ALL_desc.Text = "Practice typing every keys including numbers";
             // 
+            // version_display
+            // 
+            this.version_display.AutoSize = true;
+            this.version_display.Font = new System.Drawing.Font("Gulim", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.version_display.Location = new System.Drawing.Point(870, 33);
+            this.version_display.Name = "version_display";
+            this.version_display.Size = new System.Drawing.Size(50, 19);
+            this.version_display.TabIndex = 21;
+            this.version_display.Text = "V1.0";
+            // 
+            // creator_display
+            // 
+            this.creator_display.AutoSize = true;
+            this.creator_display.Font = new System.Drawing.Font("Gulim", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.creator_display.Location = new System.Drawing.Point(674, 9);
+            this.creator_display.Name = "creator_display";
+            this.creator_display.Size = new System.Drawing.Size(247, 19);
+            this.creator_display.TabIndex = 22;
+            this.creator_display.Text = "Developed by: Junbo Park\r\n";
+            // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 488);
+            this.Controls.Add(this.creator_display);
+            this.Controls.Add(this.version_display);
             this.Controls.Add(this.ALL_desc);
-            this.Controls.Add(this.ALL_btn);
+            this.Controls.Add(this.All_btn);
             this.Controls.Add(this.UC3_desc);
             this.Controls.Add(this.UC3_btn);
             this.Controls.Add(this.UC2_desc);
@@ -330,8 +356,10 @@ namespace MyFirstApp
         private System.Windows.Forms.Label UC2_desc;
         private System.Windows.Forms.Button UC3_btn;
         private System.Windows.Forms.Label UC3_desc;
-        private System.Windows.Forms.Button ALL_btn;
+        private System.Windows.Forms.Button All_btn;
         private System.Windows.Forms.Label ALL_desc;
+        private System.Windows.Forms.Label version_display;
+        private System.Windows.Forms.Label creator_display;
     }
 }
 

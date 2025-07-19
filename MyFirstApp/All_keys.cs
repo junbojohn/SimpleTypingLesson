@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace MyFirstApp
 {
-    public partial class Uppercase_1 : Form
+    public partial class All_keys : Form
     {
         private char[] keySets;
         private char[] targetInputs;
@@ -26,16 +26,16 @@ namespace MyFirstApp
         private bool finished;
         private Stopwatch tracker;
 
-        public Uppercase_1(int inputAmount)
+        public All_keys(int inputAmount)
         {
             InitializeComponent();
 
             this.inputAmount = inputAmount;
         }
 
-        private void Uppercase_1_Load(object sender, EventArgs e)
+        private void All_keys_Load(object sender, EventArgs e)
         {
-            keySets = new char[16];
+            keySets = new char[58];
             targetInputs = new char[inputAmount];
             rng = new Random();
 
@@ -45,6 +45,7 @@ namespace MyFirstApp
             finished = false;
             tracker = new Stopwatch();
 
+            //lowercases
             keySets[0] = 'a';
             keySets[1] = 's';
             keySets[2] = 'd';
@@ -54,18 +55,67 @@ namespace MyFirstApp
             keySets[6] = 'l';
             keySets[7] = ';';
 
-            keySets[8] = 'A';
-            keySets[9] = 'S';
-            keySets[10] = 'D';
-            keySets[11] = 'F';
-            keySets[12] = 'J';
-            keySets[13] = 'K';
-            keySets[14] = 'L';
-            keySets[15] = ':';
+            keySets[8] = 'q';
+            keySets[9] = 'w';
+            keySets[10] = 'e';
+            keySets[11] = 'r';
+            keySets[12] = 'u';
+            keySets[13] = 'i';
+            keySets[14] = 'o';
+            keySets[15] = 'p';
+
+            keySets[16] = 'z';
+            keySets[17] = 'x';
+            keySets[18] = 'c';
+            keySets[19] = 'v';
+            keySets[20] = 'n';
+            keySets[21] = 'm';
+            keySets[22] = ',';
+            keySets[23] = '.';
+
+            keySets[24] = 'g';
+            keySets[25] = 'h';
+            keySets[26] = 't';
+            keySets[27] = 'y';
+            keySets[28] = 'b';
+
+            //uppercases
+            keySets[29] = 'A';
+            keySets[30] = 'S';
+            keySets[31] = 'D';
+            keySets[32] = 'F';
+            keySets[33] = 'J';
+            keySets[34] = 'K';
+            keySets[35] = 'L';
+            keySets[36] = ':';
+
+            keySets[37] = 'Q';
+            keySets[38] = 'W';
+            keySets[39] = 'E';
+            keySets[40] = 'R';
+            keySets[41] = 'U';
+            keySets[42] = 'I';
+            keySets[43] = 'O';
+            keySets[44] = 'P';
+
+            keySets[45] = 'Z';
+            keySets[46] = 'X';
+            keySets[47] = 'C';
+            keySets[48] = 'V';
+            keySets[49] = 'N';
+            keySets[50] = 'M';
+            keySets[51] = '<';
+            keySets[52] = '>';
+
+            keySets[53] = 'G';
+            keySets[54] = 'H';
+            keySets[55] = 'T';
+            keySets[56] = 'Y';
+            keySets[57] = 'B';
 
             for (int i = 0; i < targetInputs.Count(); i++)
             {
-                rand = rng.Next(16);
+                rand = rng.Next(58);
 
                 targetInputs[i] = keySets[rand];
             }
@@ -81,7 +131,7 @@ namespace MyFirstApp
             Error_Count.Text = errors.ToString();
         }
 
-        private void Uppercase_1_KeyPress(object sender, KeyPressEventArgs e)
+        private void All_keys_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (current_index < targetInputs.Count())
             {

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace MyFirstApp
 {
-    public partial class Uppercase_1 : Form
+    public partial class Uppercase_3 : Form
     {
         private char[] keySets;
         private char[] targetInputs;
@@ -26,14 +26,14 @@ namespace MyFirstApp
         private bool finished;
         private Stopwatch tracker;
 
-        public Uppercase_1(int inputAmount)
+        public Uppercase_3(int inputAmount)
         {
             InitializeComponent();
 
             this.inputAmount = inputAmount;
         }
 
-        private void Uppercase_1_Load(object sender, EventArgs e)
+        private void Uppercase_3_Load(object sender, EventArgs e)
         {
             keySets = new char[16];
             targetInputs = new char[inputAmount];
@@ -45,23 +45,23 @@ namespace MyFirstApp
             finished = false;
             tracker = new Stopwatch();
 
-            keySets[0] = 'a';
-            keySets[1] = 's';
-            keySets[2] = 'd';
-            keySets[3] = 'f';
-            keySets[4] = 'j';
-            keySets[5] = 'k';
-            keySets[6] = 'l';
-            keySets[7] = ';';
+            keySets[0] = 'z';
+            keySets[1] = 'x';
+            keySets[2] = 'c';
+            keySets[3] = 'v';
+            keySets[4] = 'n';
+            keySets[5] = 'm';
+            keySets[6] = ',';
+            keySets[7] = '.';
 
-            keySets[8] = 'A';
-            keySets[9] = 'S';
-            keySets[10] = 'D';
-            keySets[11] = 'F';
-            keySets[12] = 'J';
-            keySets[13] = 'K';
-            keySets[14] = 'L';
-            keySets[15] = ':';
+            keySets[8] = 'Z';
+            keySets[9] = 'X';
+            keySets[10] = 'C';
+            keySets[11] = 'V';
+            keySets[12] = 'N';
+            keySets[13] = 'M';
+            keySets[14] = '<';
+            keySets[15] = '>';
 
             for (int i = 0; i < targetInputs.Count(); i++)
             {
@@ -81,7 +81,7 @@ namespace MyFirstApp
             Error_Count.Text = errors.ToString();
         }
 
-        private void Uppercase_1_KeyPress(object sender, KeyPressEventArgs e)
+        private void Uppercase_3_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (current_index < targetInputs.Count())
             {

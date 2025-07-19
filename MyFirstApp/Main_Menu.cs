@@ -30,6 +30,9 @@ namespace MyFirstApp
         // Guide articles about tools from toolboxes
         //http://csharp.net-informations.com/gui/cs_forms.htm
 
+        // How to upload new repository & commit on Github
+        //https://www.youtube.com/watch?v=HiW01MdvoJ4&ab_channel=EvanGudmestad
+
 
         // Button for 'Basic 1' lesson
         private void Basic_1_Click(object sender, EventArgs e)
@@ -115,6 +118,23 @@ namespace MyFirstApp
         {
             var uc1 = new Uppercase_2_option();
             uc1.Show();
+
+            this.Hide();
+        }
+
+        // Button for 'Uppercase 3' lesson
+        private void UC3_btn_Click(object sender, EventArgs e)
+        {
+            var uc3 = new Uppercase_3_option();
+            uc3.Show();
+
+            this.Hide();
+        }
+
+        private void All_btn_Click(object sender, EventArgs e)
+        {
+            var all = new All_keys_option();
+            all.Show();
 
             this.Hide();
         }
