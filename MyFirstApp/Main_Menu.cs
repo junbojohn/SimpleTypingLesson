@@ -10,6 +10,12 @@ using System.Windows.Forms;
 
 namespace MyFirstApp
 {
+    /*
+    Program by: Junbo Park
+    Started: Around mid 2022
+    Finished: Around July 2025
+    */
+
     public partial class Main_Menu : Form
     {
         public Main_Menu()
